@@ -1,0 +1,11 @@
+.actor-container {
+  width: 48px;
+}
+.actor-container img {
+  width: 42px;
+  height: 58px;
+  border-radius: 15px;
+}
+.actor-container span {
+  font-size: 9px;
+}
