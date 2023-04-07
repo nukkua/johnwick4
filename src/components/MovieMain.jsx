@@ -8,7 +8,7 @@ const MovieMain = () => {
     <div className='main'>
         <img src={movie.imgsrc} alt="" />
         <Gender gender={movie.gender}/>
-        <span>
+        <span className='resumen'>
             {
                 movie.resume
             }

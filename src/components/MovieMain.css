@@ -1,15 +1,22 @@
-.main img {
-  width: 107%;
-  max-width: 107%;
-  height: auto;
-  margin-top: -9px;
-  margin-left: -10px;
+.main {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  /* otros estilos... */
 }
-.main span {
-  width: 297px;
+.main img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin-top: -10px;
+  margin-left: -8px;
+}
+.resumen{
+  line-height: 15px;
+  align-items: center;
   font-size: 10px;
-  max-width: 300px;
   text-align: justify;
+  margin: -10px 70px 0 20px;
 }
 .main button {
   color: #d9d9d9;
@@ -18,8 +25,8 @@
   font-weight: 700;
   font-size: 13px;
   line-height: 19px;
-  margin: 110px 0px 0px 30px;
-  width: 321px;
+  margin: 40px 0px 0px 15px;
+  width: 300px;
   height: 50px;
   background: #6a536a;
   border: 1px solid #6a536a;

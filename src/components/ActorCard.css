@@ -1,6 +1,6 @@
 .actor-container {
   width: 38px;
-  margin-left: 30px;
+  margin-left: -2px;
 }
 .actor-container img {
   width: 32px;
@@ -13,4 +13,5 @@
   font-style: normal;
   font-weight: 400;
   justify-content: center;
+  width: 100%;
 }
