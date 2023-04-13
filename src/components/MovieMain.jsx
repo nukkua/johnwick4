@@ -5,7 +5,7 @@ import TopCastContainer from './TopCastContainer'
 import './MovieMain.css'
 const MovieMain = () => {
   return (
-    <div className='main'>
+    <div className='movie-main-container'>
         <img src={movie.imgsrc} alt="" />
         <Gender gender={movie.gender}/>
         <span className='resumen'>
@@ -13,8 +13,6 @@ const MovieMain = () => {
                 movie.resume
             }
         </span>
-        <TopCastContainer/>
-        <button>Book tickets</button>
     </div>
   )
 }

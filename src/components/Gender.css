@@ -1,6 +1,5 @@
 .gender-container{
     display: flex;
-    justify-content: center;
-    padding: 8%;
-    margin-right: 5%; 
+    justify-content: space-evenly;
+    padding: 20px 48px; 
 }
