@@ -1,6 +1,5 @@
 import React from "react";
 import { Chip } from "./Chip";
-import genders from "../assets/peliculas.json";
 import "./Gender.css"
 
 const Gender = ({ gender }) => {
