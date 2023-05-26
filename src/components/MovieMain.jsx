@@ -1,20 +1,17 @@
 import React from 'react'
-import Gender from './Gender'
-import movie from '../assets/peliculas.json'
-import TopCastContainer from './TopCastContainer'
-import './MovieMain.css'
-const MovieMain = () => {
+import { Gender } from './Gender'
+import "./MovieMain.css"
+
+export const MovieMain = ({movies}) => {
   return (
     <div className='movie-main-container'>
-        <img src={movie.imgsrc} alt="" />
-        <Gender gender={movie.gender}/>
-        <span className='resumen'>
+        <img src={movies.Poster} alt="" />
+        <Gender movies={movies}/>
+        <span>
             {
-                movie.resume
+                movies.Plot
             }
         </span>
     </div>
   )
 }
-
-export default MovieMain

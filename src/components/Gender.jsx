@@ -1,15 +1,20 @@
-import React from "react";
-import { Chip } from "./Chip";
+import React from 'react'
+import { Chip } from './Chip'
 import "./Gender.css"
 
-const Gender = ({ gender }) => {
-  return (
-    <div className="gender-container">
-      {gender.map((genre, index) => (
-        <Chip key={index} genre={genre} />
-      ))}
-    </div>
-  );
-};
+export const Gender = ({movies}) => {
+  /*const movie = props.movie */
+  const gender = movies.Genre ? movies.Genre.split(", ") : [];
 
-export default Gender;
+  return (
+    <div className='gender-container'>
+    {
+      gender.map((genero,index)=>(
+        <Chip genero={genero} key= {index}/>
+
+        ))
+    }
+      
+    </div>
+  )
+}
