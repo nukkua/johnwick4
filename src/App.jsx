@@ -15,6 +15,8 @@ function App() {
   const [topRatedMovies, setTopRatedMovies] = useState([]);
   const [actionMovies, setActionMovies] = useState([]);
   const [movies, setMovies] = useState("");
+  // metodo slice para cortar un array ania 
+  const nowPlayingMoviesSlice = nowPlayingMovies.slice(0,5);
   useEffect(() => {
     getMovies("Spider Man").then((data) => {
       setMovies(data);
@@ -52,7 +54,7 @@ function App() {
       <TopCastContainer movies={movies} />
       <BookingButton /> */}
       <SearchBar />
-      <SectionMovie title={""} movies={nowPlayingMovies} />
+      <SectionMovie title={""} movies={nowPlayingMoviesSlice} />
       <SectionMovie title={"Comming Soon"} movies={upcomingMovies} />
       <SectionMovie title={"Top Movies"} movies={topRatedMovies} />
       <SectionMovie title={"Action Movies"} movies={actionMovies} />
