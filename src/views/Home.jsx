@@ -41,7 +41,7 @@ const Home = () => {
   return (
     <div className="home-container">
       <SearchBar />
-      <SectionMovie title={""} movies={nowPlayingMoviesSlice} />
+      <SectionMovie title={""} movies={nowPlayingMovies} />
       <SectionMovie title={"Comming Soon"} movies={upcomingMovies} />
       <SectionMovie title={"Top Movies"} movies={topRatedMovies} />
       <SectionMovie title={"Action Movies"} movies={actionMovies} />

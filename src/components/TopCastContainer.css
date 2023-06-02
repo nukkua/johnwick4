@@ -9,4 +9,7 @@
   flex-direction: row;
   justify-content: space-around;
   margin-right: 8%;
+  overflow-x: scroll;
+  scrollbar-width:thin;
+  scrollbar-color: rgba(155, 155, 155, 0.7) transparent;
 }
