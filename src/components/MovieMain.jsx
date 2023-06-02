@@ -5,11 +5,11 @@ import "./MovieMain.css"
 export const MovieMain = ({movies}) => {
   return (
     <div className='movie-main-container'>
-        <img src={movies.Poster} alt="" />
-        <Gender movies={movies}/>
+        <img src={`https://image.tmdb.org/t/p/w500${movies.poster_path}`} alt="" />
+        {/* <Gender movies={movies}/> */}
         <span>
             {
-                movies.Plot
+                movies.overview
             }
         </span>
     </div>

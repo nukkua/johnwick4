@@ -1,8 +1,8 @@
-export const getMovies = async (title = "") => {
-  const movieKey = import.meta.env.VITE_MOVIE_KEY;
-  const formatTitle = titlePlus(title);
-  const apiURL = "http://www.omdbapi.com/";
-  const apiTitle = `${apiURL}?t=${formatTitle}&apikey=${movieKey}`;
+export const getMovies = async (id = "") => {
+  const movieKey = import.meta.env.VITE_MOVIE_PAGE1_KEY;
+  const formatTitle = id;
+  const apiURL = "https://api.themoviedb.org/3/movie/";
+  const apiTitle = `${apiURL}${formatTitle}?api_key=${movieKey}`;
   console.log(apiTitle);
   const response = await fetch(apiTitle);
   const data = await response.json();
