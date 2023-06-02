@@ -4,17 +4,15 @@ import "./Gender.css"
 
 export const Gender = ({movies}) => {
   /*const movie = props.movie */
-  const gender = movies.Genre ? movies.Genre.split(", ") : [];
-
+  
   return (
     <div className='gender-container'>
     {
-      gender.map((genero,index)=>(
-        <Chip genero={genero} key= {index}/>
+      movies.map((genero)=>(
+        <Chip genero={genero.name} key= {genero.id}/>
 
         ))
-    }
-      
+    } 
     </div>
   )
 }

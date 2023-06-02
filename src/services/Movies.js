@@ -9,6 +9,17 @@ export const getMovies = async (id = "") => {
   return data;
 };
 
+export const getActors = async (id = "") => {
+  const movieKey = import.meta.env.VITE_MOVIE_PAGE1_KEY;
+  const formatTitle = id;
+  const apiURL = "https://api.themoviedb.org/3/movie/";
+  const apiTitle = `${apiURL}${formatTitle}/credits?api_key=${movieKey}`;
+  console.log(apiTitle);
+  const response = await fetch(apiTitle);
+  const data = await response.json();
+  return data;
+};
+
 export const getMoviesPage1 = async (title = "", genre = "") => {
   const movieKey = import.meta.env.VITE_MOVIE_PAGE1_KEY;
   const formatTitle = title;
