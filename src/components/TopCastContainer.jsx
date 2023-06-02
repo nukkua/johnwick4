@@ -9,7 +9,7 @@ export const TopCastContainer = ({movies}) => {
         <div className='cards-container'>
             {
               actors.map((actor)=>{
-                return <ActorCard actor={actor} key={actor.id}/>
+                return <ActorCard actor={actor} key={actor.index}/>
               })
               
               //const name=()=>{}

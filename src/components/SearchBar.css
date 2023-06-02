@@ -1,0 +1,15 @@
+.search-bar-container{
+    margin-left: 34px;
+    margin-top: 70px;
+    width: 320px;
+    height: 47px;
+    border: 1.5px solid #6A536A;
+    border-radius: 20px;
+}
+.search-bar-container img{
+    margin-top: 10px;
+}
+.search-bar-container span{
+    margin-left: 20px;
+    font-size: 12px;
+}
