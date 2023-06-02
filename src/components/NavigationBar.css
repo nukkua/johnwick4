@@ -1,8 +1,24 @@
 .nav-bar-container {
-    margin-top: 10px;
-  width: 390px;
+  position: absolute;
+  display: flex;
+  margin-top: -48.5px;
+  width: 364.3334px;
   height: 74px;
   background-color: #6a536a;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+}
+.nav-bar-container .button-1 {
+  border-top-left-radius: 20px;
+}
+.nav-bar-container button {
+  border: #6a536a;
+  margin-left: 12px;
+  background-color: #6a536a;
+}
+.nav-bar-container img {
+  background-color: #6a536a;
+  margin: 12px 0px 0px 35px;
+  width: 20px;
+  height: 19.97px;
 }
