@@ -15,6 +15,7 @@ const Home = () => {
       setNowPlayingMovies(data.results);
     });
   }, []);
+  console.log(nowPlayingMovies);
 
   useEffect(() => {
     getMoviesPage1("upcoming", "").then((data) => {

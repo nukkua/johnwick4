@@ -9,7 +9,7 @@ const SectionMovie = ({ title, movies }) => {
             <span>{title}</span>
             <div className="movies-container">
                 {movies.map((movie) => {
-                    return <NavLink to={'/peliculas'}>
+                    return <NavLink to={`/peliculas/${movie.id}`}>
                         <MovieCard key={movie.id} movie={movie} />
                     </NavLink> 
                 })}

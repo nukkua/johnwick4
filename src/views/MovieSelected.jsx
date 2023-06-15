@@ -4,6 +4,7 @@ import { BookingButton } from "../components/BookingButton";
 import { MovieMain } from "../components/MovieMain";
 import { TopCastContainer } from "../components/TopCastContainer";
 import { Gender } from "../components/Gender";
+import { useParams } from "react-router-dom";
 
 const MovieSelected = () => {
   const [movie, setMovie] = useState([]);
@@ -11,23 +12,27 @@ const MovieSelected = () => {
   const [actors, setActors]=  useState([]);
 
   useEffect(() => {
-    getMovies("502356").then((data) => {
+    getMovies(slug).then((data) => {
       setMovie(data);
     });
   }, []);
-
+  
   useEffect(() => {
-    getMovies("502356").then((data) => {
+    getMovies(slug).then((data) => {
       setGenre(data.genres);
     });
   }, []);
   
   useEffect(() => {
-    getActors("502356").then((data) => {
+    getActors(slug).then((data) => {
       setActors(data.cast);
     });
   }, []);
 
+  const {slug}=useParams();
+  console.log(slug)
+
+  
   return (
     <div className="movie-selected-container">
       <MovieMain movies={movie} genre={genre} />
