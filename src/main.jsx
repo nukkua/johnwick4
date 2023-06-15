@@ -11,9 +11,9 @@ ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path="*" element={<Home />} />
+        <Route path="/johnwick4" element={<Home />} />
         <Route path="/peliculas/:slug" element={<MovieSelected />} />
-        {/* <Route path="*" element={<p>Not Found!</p>} /> */}
+        <Route path="*" element={<p>Not Found!</p>} />
       </Routes>
       <NavigationBar />
     </BrowserRouter>
