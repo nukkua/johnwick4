@@ -11,7 +11,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path="/nukkua.github.io/johnwick4" element={<Home />} />
+        <Route path="/" element={<Home />} />
         <Route path="/peliculas/:slug" element={<MovieSelected />} />
         <Route path="*" element={<p>Not Found!</p>} />
       </Routes>
